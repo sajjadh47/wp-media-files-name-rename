@@ -1,10 +1,11 @@
 # Rename WP Media Files Name
 
+**Tags:** post, edit-post, attachment, edit-attachment, edit-media-file, edit-file, file \
 **Contributors:** sajjad67 \
-**Tags:** post,edit-post,attachment,edit-attachment,edit-media-file,edit-file,file \
 **Requires at least:** 5.6 \
-**Tested up to:** 6.6 \
-**Stable tag:** 1.0.7 \
+**Tested up to:** 6.7 \
+**Stable tag:** 2.0.0 \
+**Requires PHP:** 8.0 \
 **License:** GPLv2 \
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,33 +53,33 @@ Just after installing the plugin, go media uploads list and click one to edit at
 
 ![Media attachments Rename Box.](https://ps.w.org/wp-media-files-name-rename/assets/screenshot-1.png)
 
-
 ## Changelog
 
-### 1.0.7
+### 2.0.0
+- Minor changes in codebase only.
 
+### 1.0.7
 - Compatibility check for wp 6.6
 
 ### 1.0.6
-
 - Compatibility check for wp 6.3
+
 ### 1.0.5
-
 - Compatibility check for wp 6.0
+
 ### 1.0.4
-
 - A Major Update.. Added feature when media file name renames it's old thumbnails will also be deleted...
+
 ### 1.0.3
-
 - A Minor Bug fixed... Added check if input available to ignore any error
+
 ### 1.0.2
-
 - On Media List View.. Bootstrap Framework was causing issue.. Fixed with this version.
+
 ### 1.0.1
-
 - File Rename Second time was causing issue... GUID wasn't updating properly if user want's to update file multiple time.. It's now fixed
-### 1.0.0
 
+### 1.0.0
 - Initial release.
 
 ## Upgrade Notice
