@@ -1,11 +1,13 @@
 === Rename WP Media Files Name ===
+Tags: post, edit-post, attachment, edit-media-file-name
 Contributors: sajjad67
-Tags: post,edit-post,attachment,edit-media-file-name
-Requires at least: 5.6
+Author: Sajjad Hossain Sagor
 Tested up to: 6.7
+Requires at least: 5.6
 Stable tag: 2.0.0
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires PHP: 8.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Change Media Attachments Files Name Easily.
 
@@ -29,8 +31,8 @@ Go to Plugins > Add New.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from GitHub repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
