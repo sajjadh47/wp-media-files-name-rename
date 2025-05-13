@@ -1,13 +1,8 @@
 # Rename WP Media Files Name
 
 **Tags:** post, edit-post, attachment, edit-attachment, edit-media-file, edit-file, file \
-**Contributors:** sajjad67 \
-**Requires at least:** 5.6 \
-**Tested up to:** 6.7 \
-**Stable tag:** 2.0.0 \
-**Requires PHP:** 8.0 \
-**License:** GPLv2 \
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**Tested up to:** 6.8 \
+**Requires PHP:** 8.0
 
 Change Media Attachments Files Name Easily.
 
@@ -17,10 +12,11 @@ This plugin adds feature to change your Media Attachments Files Name Easily.
 
 ### Features:
 
-- Change (Edit) Media Uploads File Name Easily From Attachments Edit Page
-
-**Interested in contributing to WP Edit Username?**
-Contact me... sagorh672(at)gmail.com
+- Change (Edit) Media Uploads File Name
+- Change History Table To View Previous Changes
+- Rebuild Media Thumbnails On Change
+- Deletes Old Media File On Change
+- Quick Setup and User-Friendly Interface
 
 ## Installation
 
@@ -54,6 +50,9 @@ Just after installing the plugin, go media uploads list and click one to edit at
 ![Media attachments Rename Box.](https://ps.w.org/wp-media-files-name-rename/assets/screenshot-1.png)
 
 ## Changelog
+
+### 2.0.1
+- Checked for latest wp version 6.8
 
 ### 2.0.0
 - Minor changes in codebase only.

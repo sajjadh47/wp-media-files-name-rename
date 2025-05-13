@@ -4,7 +4,7 @@
  *
  * @since         2.0.0
  * @package       Wp_Media_Files_Name_Rename
- * @subpackage    Wp_Media_Files_Name_Rename/public
+ * @subpackage    Wp_Media_Files_Name_Rename/languages
  * @author        Sajjad Hossain Sagor <sagorh672@gmail.com>
  */
 

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,13 +7,15 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @since             2.0.0
- * @package           Rename_WP_Media_Files_Name
+ * @package           Wp_Media_Files_Name_Rename
+ * @author            Sajjad Hossain Sagor <sagorh672@gmail.com>
  *
  * Plugin Name:       Rename WP Media Files Name
  * Plugin URI:        https://wordpress.org/plugins/wp-media-files-name-rename/
  * Description:       Change Media Attachments Files Name Easily.
- * Version:           2.0.0
+ * Version:           2.0.1
+ * Requires at least: 6.5
+ * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
  * Author URI:        https://sajjadhsagor.com/
  * License:           GPL-2.0+
@@ -24,59 +25,59 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) die;
+if ( ! defined( 'ABSPATH' ) ) {
+	die;
+}
 
 /**
  * Currently plugin version.
  */
-define( 'RENAME_WP_MEDIA_FILES_NAME_VERSION', '2.0.0' );
+define( 'WP_MEDIA_FILES_NAME_RENAME_PLUGIN_VERSION', '2.0.1' );
 
 /**
  * Define Plugin Folders Path
  */
-define( 'RENAME_WP_MEDIA_FILES_NAME_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+define( 'WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
-define( 'RENAME_WP_MEDIA_FILES_NAME_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'WP_MEDIA_FILES_NAME_RENAME_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-define( 'RENAME_WP_MEDIA_FILES_NAME_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+define( 'WP_MEDIA_FILES_NAME_RENAME_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-activator.php
- * 
+ * This action is documented in includes/class-wp-media-files-name-rename-activator.php
+ *
  * @since    2.0.0
  */
-function activate_rename_wp_media_files_name()
-{
-	require_once RENAME_WP_MEDIA_FILES_NAME_PLUGIN_PATH . 'includes/class-plugin-activator.php';
-	
-	Rename_WP_Media_Files_Name_Activator::activate();
+function on_activate_wp_media_files_name_rename() {
+	require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'includes/class-wp-media-files-name-rename-activator.php';
+
+	Wp_Media_Files_Name_Rename_Activator::on_activate();
 }
 
-register_activation_hook( __FILE__, 'activate_rename_wp_media_files_name' );
+register_activation_hook( __FILE__, 'on_activate_wp_media_files_name_rename' );
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-deactivator.php
- * 
+ * This action is documented in includes/class-wp-media-files-name-rename-deactivator.php
+ *
  * @since    2.0.0
  */
-function deactivate_rename_wp_media_files_name()
-{
-	require_once RENAME_WP_MEDIA_FILES_NAME_PLUGIN_PATH . 'includes/class-plugin-deactivator.php';
-	
-	Rename_WP_Media_Files_Name_Deactivator::deactivate();
+function on_deactivate_wp_media_files_name_rename() {
+	require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'includes/class-wp-media-files-name-rename-deactivator.php';
+
+	Wp_Media_Files_Name_Rename_Deactivator::on_deactivate();
 }
 
-register_deactivation_hook( __FILE__, 'deactivate_rename_wp_media_files_name' );
+register_deactivation_hook( __FILE__, 'on_deactivate_wp_media_files_name_rename' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
- * 
+ *
  * @since    2.0.0
  */
-require RENAME_WP_MEDIA_FILES_NAME_PLUGIN_PATH . 'includes/class-plugin.php';
+require WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'includes/class-wp-media-files-name-rename.php';
 
 /**
  * Begins execution of the plugin.
@@ -87,11 +88,10 @@ require RENAME_WP_MEDIA_FILES_NAME_PLUGIN_PATH . 'includes/class-plugin.php';
  *
  * @since    2.0.0
  */
-function run_rename_wp_media_files_name()
-{
-	$plugin = new Rename_WP_Media_Files_Name();
-	
+function run_wp_media_files_name_rename() {
+	$plugin = new Wp_Media_Files_Name_Rename();
+
 	$plugin->run();
 }
 
-run_rename_wp_media_files_name();
+run_wp_media_files_name_rename();
