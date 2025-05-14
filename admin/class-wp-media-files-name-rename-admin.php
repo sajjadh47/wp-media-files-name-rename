@@ -122,7 +122,7 @@ class Wp_Media_Files_Name_Rename_Admin {
 		/* Only show if not in Thickbox iframe */
 		$screen = get_current_screen();
 
-		if ( 'upload' !== $screen->parent_base ) {
+		if ( $screen && 'upload' !== $screen->parent_base ) {
 			return $form_fields;
 		}
 
