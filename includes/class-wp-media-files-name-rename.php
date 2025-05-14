@@ -59,7 +59,7 @@ class Wp_Media_Files_Name_Rename {
 	 * @access    public
 	 */
 	public function __construct() {
-		$this->version     = defined( 'WP_MEDIA_FILES_NAME_RENAME_VERSION' ) ? WP_MEDIA_FILES_NAME_RENAME_VERSION : '1.0.0';
+		$this->version     = defined( 'WP_MEDIA_FILES_NAME_RENAME_PLUGIN_VERSION' ) ? WP_MEDIA_FILES_NAME_RENAME_PLUGIN_VERSION : '1.0.0';
 		$this->plugin_name = 'wp-media-files-name-rename';
 
 		$this->load_dependencies();
