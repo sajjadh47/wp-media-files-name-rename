@@ -1,6 +1,6 @@
 <?php
 /**
- * This file contains the definition of the WP_Edit_Username_Admin class, which
+ * This file contains the definition of the Wp_Media_Files_Name_Rename_Admin class, which
  * is used to load the plugin's admin-specific functionality.
  *
  * @package       Wp_Media_Files_Name_Rename

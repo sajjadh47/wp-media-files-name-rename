@@ -73,10 +73,10 @@ class Wp_Media_Files_Name_Rename {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Wp_Media_Files_Name_Rename_Loader.  Orchestrates the hooks of the plugin.
-	 * - Wp_Media_Files_Name_Rename_i18n.    Defines internationalization functionality.
-	 * - Wp_Media_Files_Name_Rename_Admin.   Defines all hooks for the admin area.
-	 * - Wp_Media_Files_Name_Rename_Public.  Defines all hooks for the public side of the site.
+	 * - Wp_Media_Files_Name_Rename_Loader. Orchestrates the hooks of the plugin.
+	 * - Wp_Media_Files_Name_Rename_i18n.   Defines internationalization functionality.
+	 * - Wp_Media_Files_Name_Rename_Admin.  Defines all hooks for the admin area.
+	 * - Wp_Media_Files_Name_Rename_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.

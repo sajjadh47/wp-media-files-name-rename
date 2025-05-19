@@ -24,6 +24,7 @@ class Wp_Media_Files_Name_Rename_Activator {
 	 * or scheduling cron jobs.
 	 *
 	 * @since     2.0.0
+	 * @static
 	 * @access    public
 	 */
 	public static function on_activate() {}
