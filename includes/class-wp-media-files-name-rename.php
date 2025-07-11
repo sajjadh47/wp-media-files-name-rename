@@ -11,8 +11,7 @@
 /**
  * The core plugin class.
  *
- * This is used to define internationalization, admin-specific hooks, and
- * public-facing hooks.
+ * This is used to define admin-specific hooks and public-facing hooks.
  *
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
@@ -52,7 +51,7 @@ class Wp_Media_Files_Name_Rename {
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
-	 * Load the dependencies, define the locale, and set the hooks for the admin area and
+	 * Load the dependencies, set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
 	 * @since     2.0.0
@@ -63,7 +62,6 @@ class Wp_Media_Files_Name_Rename {
 		$this->plugin_name = 'wp-media-files-name-rename';
 
 		$this->load_dependencies();
-		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -74,7 +72,6 @@ class Wp_Media_Files_Name_Rename {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - Wp_Media_Files_Name_Rename_Loader. Orchestrates the hooks of the plugin.
-	 * - Wp_Media_Files_Name_Rename_i18n.   Defines internationalization functionality.
 	 * - Wp_Media_Files_Name_Rename_Admin.  Defines all hooks for the admin area.
 	 * - Wp_Media_Files_Name_Rename_Public. Defines all hooks for the public side of the site.
 	 *
@@ -92,12 +89,6 @@ class Wp_Media_Files_Name_Rename {
 		require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'includes/class-wp-media-files-name-rename-loader.php';
 
 		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
-		require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'includes/class-wp-media-files-name-rename-i18n.php';
-
-		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'admin/class-wp-media-files-name-rename-admin.php';
@@ -109,21 +100,6 @@ class Wp_Media_Files_Name_Rename {
 		require_once WP_MEDIA_FILES_NAME_RENAME_PLUGIN_PATH . 'public/class-wp-media-files-name-rename-public.php';
 
 		$this->loader = new Wp_Media_Files_Name_Rename_Loader();
-	}
-
-	/**
-	 * Define the locale for this plugin for internationalization.
-	 *
-	 * Uses the Wp_Media_Files_Name_Rename_i18n class in order to set the domain and to register the hook
-	 * with WordPress.
-	 *
-	 * @since     2.0.0
-	 * @access    private
-	 */
-	private function set_locale() {
-		$plugin_i18n = new Wp_Media_Files_Name_Rename_i18n();
-
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 	}
 
 	/**
@@ -167,8 +143,7 @@ class Wp_Media_Files_Name_Rename {
 	}
 
 	/**
-	 * The name of the plugin used to uniquely identify it within the context of
-	 * WordPress and to define internationalization functionality.
+	 * The name of the plugin used to uniquely identify it within the context of WordPress.
 	 *
 	 * @since     2.0.0
 	 * @access    public
