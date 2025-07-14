@@ -14,7 +14,7 @@
  * Plugin URI:        https://wordpress.org/plugins/wp-media-files-name-rename/
  * Description:       Change Media Attachments Files Name Easily.
  * Version:           2.0.1
- * Requires at least: 6.5
+ * Requires at least: 5.6
  * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
  * Author URI:        https://sajjadhsagor.com/
