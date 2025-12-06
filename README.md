@@ -53,6 +53,9 @@ Just after installing the plugin, go media uploads list and click one to edit at
 
 ## Changelog
 
+### 2.0.2
+- Checked for latest wp version 6.9
+
 ### 2.0.1
 - Checked for latest wp version 6.8
 
