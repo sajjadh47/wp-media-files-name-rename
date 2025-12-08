@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/wp-media-files-name-rename/assets/banner-772x250.png)](https://wordpress.org/plugins/wp-media-files-name-rename/)
 
 **Tags:** post, edit-post, attachment, edit-attachment, edit-media-file, edit-file, file \
-**Tested up to:** 6.8 \
+**Tested up to:** 6.9 \
 **Requires PHP:** 8.0
 
 Change Media Attachments Files Name Easily.
