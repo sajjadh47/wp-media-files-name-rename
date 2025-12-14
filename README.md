@@ -1,6 +1,6 @@
 # Rename WP Media Files Name
 
-[![Plugin Banner](https://ps.w.org/wp-media-files-name-rename/assets/banner-772x250.png)](https://wordpress.org/plugins/wp-media-files-name-rename/)
+[![Plugin Banner](https://ps.w.org/wp-media-files-name-rename/assets/banner-1544x500.png)](https://wordpress.org/plugins/wp-media-files-name-rename/)
 
 **Tags:** post, edit-post, attachment, edit-attachment, edit-media-file, edit-file, file \
 **Tested up to:** 6.9 \
